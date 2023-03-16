@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  </head>
+  <body class="antialiased text-slate-500 font-['Inter']">
+  <!-- HEADER -->
+  <header class="xl:container xl:mx-auto p-2">
+    <div class="flex justify-between ">
+      <div class="">
+        <img src="https://placeimg.com/300/150/arch" alt="logotype">
+      </div>
+      <div class="grow flex flex-col justify-between">
+        <div class="flex flex-col">
+        <ul class="flex gap-2 justify-end text-blue-600 font-normal underline">
+          <li><a href="#">View cart</a></li>
+          <li><a href="#">Order list</a></li>
+        </ul>
+        <form action="#" method="GET" class="flex gap-2 justify-end mt-2 mb-2">
+          <input type="text" class="border border-sky-700" name="search" id="search" placeholder="Products, Parts, Keywords Search">
+          <button type="submit" class=" rounded p-1.5 bg-sky-600 text-white drop-shadow-lg">Search</button>
+        </form>
+        </div>
+        <div class="flex gap-10 ml-10 justify-between">
+          <ul class="flex gap-4 text-blue-600 font-normal underline">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <a href="#">800-888-8888</a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!--MAIN CONTENT -->
+  <main class="xl:container xl:mx-auto mt-20">
+    <div class="flex justify-between gap-2">
+      <aside class="grow">
+        <section class="border border-black	bg-zinc-200 min-h-full flex">
+          <ul class="flex flex-col min-w-full ">
+            <li class="border border-black grow text-center"><a href="">Rainfall Sensors</a></li>
+            <li class="border border-black grow text-center"><a href="">Wind Anemometer</a></li>
+            <li class="border border-black grow text-center"><a href="">Weather Stations</a></li>
+            <li class="border border-black grow text-center"><a href="">Controllers</a></li>
+            <li class="border border-black grow text-center"><a href="">Indicators/Displays</a></li>
+            <li class="border border-black grow text-center"><a href="">Temp/Humidity Sensors</a></li>
+            <li class="border border-black grow text-center"><a href="">Barometric Pressure</a></li>
+            <li class="border border-black grow text-center"><a href="">Solar Radiation</a></li>
+            <li class="border border-black grow text-center"><a href="">Replacement Parts</a></li>
+          </ul>
+        </section>
+      </aside>
+      <section>
+        <div class="shrink">
+          <img src="https://placeimg.com/1200/300/any" alt="">
+        </div>
+      </section>
+    </div>
+  </main>
+  <!-- PRODUCTS SECTION  -->
+  <section class="xl:container xl:mx-auto mt-20 flex">
+    <div class="flex flex-col">
+      <div class="mb-6">
+        <p class="text-[#0F172A] font-bold text-xl">Featured Products</p>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="flex p-2 gap-2 w-2/4">
+          <div class="">
+            <img src="https://placeimg.com/100/100/any" alt="any">
+          </div>
+          <div class="">
+            <p class="text-[#0F172A] font-bold">Product Title</p>
+            <p>SKU</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+            <button class="rounded p-1.5 bg-sky-600 text-white drop-shadow-lg">More info >></button>
+          </div>
+        </div>
+        <div class="flex p-2 gap-2 w-2/4">
+          <div class="">
+            <img src="https://placeimg.com/100/100/any" alt="any">
+          </div>
+          <div class="">
+            <p class="text-[#0F172A] font-bold">Product Title</p>
+            <p>SKU</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+            <button class="rounded p-1.5 bg-sky-600 text-white drop-shadow-lg">More info >></button>
+          </div>
+        </div>
+        <div class="flex p-2 gap-2 w-2/4">
+          <div class="">
+            <img src="https://placeimg.com/100/100/any" alt="any">
+          </div>
+          <div class="">
+            <p class="text-[#0F172A] font-bold">Product Title</p>
+            <p>SKU</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+            <button class="rounded p-1.5 bg-sky-600 text-white drop-shadow-lg">More info >></button>
+          </div>
+        </div>
+        <div class="flex p-2 gap-2 w-2/4 items-center">
+          <div class="">
+            <img src="https://placeimg.com/100/100/any" alt="any">
+          </div>
+          <div class="">
+            <p class="text-[#0F172A] font-bold">Product Title</p>
+            <p>SKU</p>
+            <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatum.</p>
+            <button class="rounded p-1.5 bg-sky-600 text-white drop-shadow-lg">More info >></button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <aside class="w-96">
+      <img src="https://placeimg.com/300/500/any" alt="any">
+    </aside>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="container mx-auto mt-10">
+    <div class="flex justify-center text-justify">
+      <p>Copyright is a form of protection grounded in the U.S. Constitution and granted by law for original works of authorship fixed in a tangible medium of expression. Copyright covers both published and unpublished works.</p>
+    </div>
+  </footer>
+  <script src="../app.js"></script>
+  </body>
+</html>
